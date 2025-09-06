@@ -1,0 +1,8 @@
+# Ignorar node_modules
+node_modules/* linguist-vendored
+
+# Ignorar build/output
+dist/* linguist-generated
+
+# Garantir que .ts conte como TypeScript
+*.ts linguist-language=TypeScript
