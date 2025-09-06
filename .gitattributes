@@ -1,8 +1,13 @@
-# Ignorar node_modules
+# Ignorar dependências
 node_modules/* linguist-vendored
 
-# Ignorar build/output
+# Ignorar builds/artefatos
 dist/* linguist-generated
+build/* linguist-generated
+coverage/* linguist-generated
 
-# Garantir que .ts conte como TypeScript
+# Garantir que .ts seja contado como TypeScript
 *.ts linguist-language=TypeScript
+
+# (opcional) se tiver .js que são transpilados do TS
+*.js linguist-generated
